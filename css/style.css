@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Montserrat:wght@500&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root{
+    --corfundo: #dfe4ec;
+    --corheader: #E0E5EC;
+    --cordestaque: #4672fe; /* Azul: #4672fe  Verde: #08d665 */
+    --cortitulo:#333333;
+    --corparagrafos:#3d3d3d;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: var(--corfundo); /*f7f7f7*/
+}
+header.sticky{
+    background: var(--corheader); 
+    transition: 0.5s; 
+}
+header.sticky .header{
+    height: 6vh;
+    box-shadow: 0 10px 40px #0000000d;
+    transition: 0.5s; 
+}
+header{
+    position: sticky;
+    top: 0;
+    transition: 0.5s; 
+    
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    padding: 10px 0;
+    position: relative;
+    transition: 0.5s;
+}
+.header h1{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: 'Bakbak One', cursive;
+}
+.ul-nav{
+    display: flex;
+}
+.ul-nav li{
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 32px;
+    transition: 0.3s;
+}
+.btn-hambuger{
+    display: none;
+}
+.txt-destaque{
+    color: var(--cordestaque);
+}
+a{
+    text-decoration: none;
+    color: var(--cortitulo);
+}
+.ul-nav li :hover{
+    color: var(--cordestaque);
+    transition: 0.3s;
+}
+
+/*---------------------------------------------------------------------------Main------------------------------------------------------------------------------------------------*/
+.principal{
+    margin: 150px 0px 20% 16%;
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+}
+.principal h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: var(--cortitulo);
+    font-family: 'Bakbak One', cursive;
+    
+}
+.name::after{
+    content: "Filipe Vieira";
+    color: var(--cordestaque);
+}
+
+.paragrafos{
+    margin:20px 0 30px 2px;
+    letter-spacing: 2px;
+    color: var(--corparagrafos);
+    line-height: 1.5em;
+    
+}
+.btn-principal{
+    background: var(--cordestaque);
+    border: none;
+    padding: 3% 8%;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--corheader);
+    margin-top: 50px;
+    transition: 1s;
+    letter-spacing: 3px;
+}
+.btn-principal:hover{
+    box-shadow: 3px 3px 15px var(--cortitulo);
+    transform: scale(1.02);
+}
+
+.div-apresentacao{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.tecnologias{
+    margin: 110px 0;
+}
+.titulo-secundario{
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--cortitulo);
+    font-family: 'Bakbak One', cursive;
+    text-align: center;
+}
+.tecnologias h2::after{
+    content: "conhecimentos";
+    color: var(--cordestaque);
+}
+.div-lista{
+    width: 100%;
+}
+.div-lista ul li{
+    display: inline-block;
+    margin: 20px 20px;
+    box-sizing: border-box;
+    border: solid 1px #d4d4d4;
+    padding: 50px 50px;
+    width: 30%;
+    transition: 1s;
+    text-align: center;
+    
+}
+.div-lista ul li:hover{
+    color: var(--cordestaque);
+    border:solid 1px var(--cordestaque);
+    transform: scale(1.02);
+    box-shadow: 0 10px 40px #0000000d;
+}
+.div-lista ul{
+    margin: 40px 0;
+    text-align: center;
+}
+.icons{
+    width: 30%;
+    margin: 20px 0;
+}
+.curriculo h2::after{
+    content: "Currículo";
+    color: var(--cordestaque);
+}
+
+.div-curriculo img{
+    width: 70%;
+    border: solid 5px var(--cordestaque);
+    transition: 1.02s;
+}
+.div-curriculo img:hover{
+    transform: scale(1.02);
+    padding: 5px 5px;
+    border-radius: 40px;
+}
+.txt-curriculo{
+    width: 50%;
+}
+
+.bloco-curriculo{
+    width: 80%;
+    margin: 60px 40px;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.contato h2::after{
+    content: "contato";
+    color: var(--cordestaque);
+}
+.contato{
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.redes{
+    padding: 40px 0px;
+    text-align: center;
+    height: 40%;
+    width: 40%;
+    background: #d5deeb;
+    border: var(--cordestaque) solid 2px;
+    border-radius: 70px;
+}
+.perfil{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 60px 0 60px 0;
+}
+.li-redes{
+    margin: 40px 10px;
+    display: inline;
+}
+.li-redes img{
+    width: 10%;
+    border: none;
+    border-radius:50px;
+    transition: 0.5s;
+}
+.li-redes img:hover{
+    border: none;
+    box-shadow: 5px 5px 15px var(--cordestaque);
+}
+.div-contato h3{
+    font-weight: bold;
+    color: var(--cortitulo);
+}
+.li-contato h3::after{
+    content: " :";
+    color: var(--cordestaque);
+}
+.li-contato{
+    padding: 20px 0;
+}
+.li-contato h3{
+    padding: 10px 0;
+}
+.div-contato a h2{
+    text-align: left;
+}
+/*---------------------------------------------------------------------------footer-----------------------------------------------------------------------------------------------*/
+footer{
+    width: 100%;
+    background: #252525;
+}
+footer p{
+    text-align: center;
+    padding: 30px 0;
+    color: #ffffff;
+    
+}
+
+@media screen and (max-width: 780px) {
+    
+    /*Botão mobile*/
+    .ul-nav{
+        display: none;
+    }
+    #btn-hambuger{
+        display: block;
+        cursor: pointer;
+    }
+    .line{
+        border-top: 2px solid var(--cordestaque);
+    }
+    .line::after, .line::before {
+        width: 30px;
+        height: 2px;
+        content: '';
+        display: block;
+        background-color: var(--cordestaque);
+        margin-top: 5px;
+    }
+
+    /*---------------------------------*/
+
+    .div-apresentacao{
+        display: block;
+    }
+    .principal{
+        width: 80%;
+        margin: 100px 0 50px 20px;
+    }
+    .foto{
+        margin: 0 0 0 0;
+        text-align: center;
+        width: 100%;
+    }
+    .img{
+        width: 80%;
+    }
+    .div-lista ul li{
+        display: inline-block;
+        width: 40%;
+        margin: 20px 10px 0px 10px ;
+    }
+    .icons{
+        width: 100%;
+    }
+    .div-lista ul li p{
+        display: none;
+    }
+    .contato{
+        display: block;
+        margin: 20px 15px;
+    }
+    .div-contato a h2{
+        text-align: center;
+    }
+    .redes{
+        width: 100%;
+    }
+    .li-redes img{
+        width: 15%;
+    }
+
+    
+}
